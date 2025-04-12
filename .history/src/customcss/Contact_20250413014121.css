@@ -1,0 +1,58 @@
+/* Style for the Contact Section */
+#contact {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #2d3748; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+  }
+  
+  #contact .contact-container {
+    width: 100%;
+  }
+  
+  #contact p {
+    font-size: 1.25rem; /* Adjust font size */
+    font-weight: 500; /* Medium font weight */
+  }
+  
+  #contact a.contact-link {
+    color: #38b2ac; /* Teal color for the email link */
+    text-decoration: none;
+    font-weight: 600; /* Bold font for emphasis */
+  }
+  
+  #contact a.contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Social media icons */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    margin: 0 15px;
+    font-size: 2rem;
+    color: #fff; /* White color for icons */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #38b2ac; /* Change to teal color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #contact p {
+      font-size: 1rem;
+    }
+    .social-links {
+      margin-top: 10px;
+    }
+  }
+  

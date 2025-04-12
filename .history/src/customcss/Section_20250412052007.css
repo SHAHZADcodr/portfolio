@@ -1,0 +1,62 @@
+/* Section.css */
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    background-color: #1a202c; /* Dark Gray background */
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .section:hover {
+    background-color: #2d3748; /* Lighter dark background on hover */
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #06b6d4; /* Cyan color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .section h2:hover {
+    transform: scale(1.1); /* Hover effect on title */
+  }
+  
+  .section .content {
+    max-width: 50rem;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #e2e8f0; /* Light gray for text */
+    margin: 0 auto;
+    padding: 0 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .section .content:hover {
+    color: #ffb3b3; /* Light red highlight on hover */
+  }
+  /* Adding animations */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section {
+    animation: fadeIn 1s ease-out;
+  }
+  

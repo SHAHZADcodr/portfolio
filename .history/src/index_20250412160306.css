@@ -1,0 +1,21 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 70px; /* Push content below fixed navbar */
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+}

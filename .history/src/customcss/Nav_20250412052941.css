@@ -1,0 +1,181 @@
+/* Nav.css */
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a202c; /* Dark background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    z-index: 50;
+    display: flex;
+    justify-content: space-between; /* Space out the logo and nav items */
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease-in-out;
+    flex-wrap: wrap; /* Ensure content wraps correctly on small screens */
+  }
+  
+  /* Logo Styles */
+  .logo h1 {
+    color: #06b6d4; /* Cyan color for the logo */
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: left; /* Keep logo on the left */
+    flex-basis: 100%; /* Make the logo take full width on mobile */
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Center the links horizontally */
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%; /* Make nav links take full width */
+    flex-wrap: wrap; /* Allow wrapping of links in small screens */
+  }
+  
+  .nav-links li {
+    margin-right: 2rem;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  .nav-links a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: #06b6d4; /* Cyan color on hover */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+  }
+  
+  /* Active Link Style */
+  .nav-links a.active {
+    color: #06b6d4; /* Cyan color for the active link */
+    font-weight: bold;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .hamburger .bar {
+    height: 4px;
+    width: 30px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .navbar {
+      padding: 1rem; /* Reduce padding on smaller screens */
+    }
+  
+    .logo h3 {
+      font-size: 1.5rem; /* Slightly smaller logo on smaller screens */
+      color:white;
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #1a202c;
+      padding: 1rem 0;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(-100%); /* Initially hidden */
+      justify-content: center; /* Ensure links are centered */
+    }
+  
+    .nav-links.active {
+      transform: translateY(0); /* Show the menu when active */
+    }
+  
+    .nav-links li {
+      margin-bottom: 1rem; /* Space between nav items */
+    }
+  
+    .nav-links li:last-child {
+      margin-bottom: 0;
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger on small screens */
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjustments for even smaller screens (mobile-first) */
+    .navbar {
+      flex-direction: column; /* Stack the logo and links vertically */
+      padding: 1rem;
+    }
+  
+    .logo h1 {
+      margin-bottom: 1rem; /* Space between logo and navigation */
+      text-align: center; /* Ensure the logo is centered */
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #1a202c;
+      padding: 1rem 0;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(-100%); /* Initially hidden */
+      justify-content: center; /* Ensure links are centered */
+    }
+  
+    .nav-links.active {
+      transform: translateY(0); /* Show the menu when active */
+    }
+  
+    .nav-links li {
+      margin-bottom: 1rem; /* Space between nav items */
+    }
+  
+    .nav-links li:last-child {
+      margin-bottom: 0;
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger on small screens */
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  

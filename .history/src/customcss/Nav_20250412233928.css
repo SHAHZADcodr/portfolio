@@ -1,0 +1,79 @@
+/* General Navbar Styles */
+.navbar-custom {
+  background-color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  height: 60px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* Offset the body content to prevent overlap with fixed navbar */
+body {
+  margin: 0;
+  padding-top: 60px;
+  background-color: #000;
+}
+
+/* Navbar Brand - Logo */
+.navbar-brand {
+  color: #00ffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover,
+#logo {
+  color: #00ffff;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #00ffff !important;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-right: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0fe1e1 !important;
+  font-weight: bold;
+}
+
+/* Navbar Toggle Button (Hamburger) */
+.navbar-toggler {
+  border-color: #00ffff;
+  background-color: transparent;
+  color: #00ffff;
+}
+
+/* Ensure collapsible menu is full-width and aligned */
+.navbar-collapse {
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+}
+
+/* Optional: style mobile nav links stacked */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    margin: 0.75rem 0;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-top: 1px solid #333;
+  }
+}

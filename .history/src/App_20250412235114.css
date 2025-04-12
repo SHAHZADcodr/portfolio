@@ -1,0 +1,10 @@
+.main-content {
+    padding-top: 60px; /* or whatever height your navbar is */
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding-top: 70px; /* adjust if needed for smaller screens */
+    }
+  }
+  
