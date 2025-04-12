@@ -1,0 +1,21 @@
+/* Push page content below fixed navbar */
+body {
+  padding-top: 70px; /* Adjust if your navbar is taller */
+  margin: 0;
+  overflow-x: hidden;
+  background-color:black!important;
+  
+}
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}

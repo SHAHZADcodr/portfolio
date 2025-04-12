@@ -1,0 +1,15 @@
+/* src/customcss/Section.css */
+.section {
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  /* overflow: hidden; <-- Removed this to allow 3D content */
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}

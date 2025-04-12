@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* index.css */
+
+.nav-shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+  transition: color 0.3s ease-in-out;
+}

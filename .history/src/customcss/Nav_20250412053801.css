@@ -1,0 +1,77 @@
+/* Nav.css */
+
+/* General Navbar Styles */
+.navbar {
+  background-color: #1a202c; /* Dark background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Navbar Brand - Logo */
+.navbar-brand img {
+  max-width: 120px; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #fff !important; /* White text */
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-right: 1.5rem; /* Space between nav items */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #06b6d4 !important; /* Cyan color on hover */
+  font-weight: bold;
+}
+
+/* Dropdown Styles */
+.navbar-nav .nav-dropdown .nav-link {
+  color: #fff !important;
+}
+
+.navbar-nav .nav-dropdown .nav-link:hover {
+  color: #06b6d4 !important; /* Cyan on hover */
+}
+
+/* Make Navbar collapse properly on mobile */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center; /* Center align links on mobile */
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    background-color: #1a202c; /* Match the background */
+  }
+
+  .navbar-nav .nav-link {
+    margin: 1rem 0; /* Stack links with margin */
+    padding: 0.5rem 0; /* Make the links more clickable */
+  }
+}
+/* Nav.css */
+
+/* Toggler Icon Styles */
+.navbar-toggler {
+    border-color: #fff; /* Set the border color of the hamburger icon to white */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* Set the background color of the hamburger icon to white */
+    width: 30px; /* Adjust the width of the hamburger icon */
+    height: 20px; /* Adjust the height of the hamburger icon */
+  }
+  
+  .navbar-toggler-icon:before {
+    background-color: #fff; /* Ensure the icon bars are white */
+  }
+  
+  /* When the navbar is expanded, you might want to ensure the icon remains consistent */
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: #0ccbcb; /* Change color to cyan when expanded */
+  }
+  
+

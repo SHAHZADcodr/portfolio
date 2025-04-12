@@ -1,0 +1,98 @@
+/* Nav.css */
+
+/* General Navbar Styles */
+.navbar {
+  background-color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1000; /* Ensure navbar stays on top */
+  transition: top 0.3s;
+  height: 60px; /* Fixed height for better layout */
+}
+/* Adjust body or main content */
+body {
+  margin-top: 60px; /* Adjust for fixed navbar height */
+  background-color:#000;
+}
+
+/* Navbar Brand - Logo */
+.navbar-brand {
+  color: #00ffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #00ffff;
+}
+
+#logo {
+  color: #00ffff;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #00ffff !important;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-right: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0fe1e1 !important;
+  font-weight: bold;
+}
+
+/* Toggler Icon Styles */
+.navbar-toggler {
+  border-color: #00ffff;
+}
+
+.navbar-toggler-icon {
+  background-color: #00ffff;
+  width: 30px;
+  height: 20px;
+}
+
+.navbar-toggler-icon:before {
+  background-color: #00ffff;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: #00ffff;
+}
+
+/* Mobile-specific tweaks */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    background-color: #000;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler-icon {
+    background-color: transparent;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: #00ffff;
+  }
+}

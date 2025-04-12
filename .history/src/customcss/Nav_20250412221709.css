@@ -1,0 +1,50 @@
+/* General Navbar Styles */
+.navbar-custom {
+  background-color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  height: 60px;
+  z-index: 1000;
+}
+
+body {
+  margin-top: 60px;
+  background-color: #000;
+}
+
+/* Navbar Brand - Logo */
+.navbar-brand {
+  color: #00ffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover,
+#logo {
+  color: #00ffff;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #00ffff !important;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-right: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0fe1e1 !important;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+.main-content {
+    padding-top: 60px; /* Adjust based on actual navbar height */
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding-top: 65px; /* Slightly higher for mobile navbar toggle */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

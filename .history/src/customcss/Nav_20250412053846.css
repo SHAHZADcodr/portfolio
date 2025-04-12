@@ -1,0 +1,30 @@
+/* Toggler Icon Styles */
+.navbar-toggler {
+    border-color: #fff; /* Set the border color of the hamburger icon to white */
+  }
+  
+  /* Toggler icon background color */
+  .navbar-toggler-icon {
+    background-color: #fff; /* Set the background color of the hamburger icon to white */
+    width: 30px; /* Adjust the width of the hamburger icon */
+    height: 20px; /* Adjust the height of the hamburger icon */
+  }
+  
+  /* Ensure the icon bars are white */
+  .navbar-toggler-icon:before {
+    background-color: #fff; /* Set icon bars to white */
+  }
+  
+  /* When the navbar is expanded, change icon color to cyan */
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: #06b6d4; /* Change to cyan when expanded */
+  }
+  
+  /* Navbar toggler adjustments for smaller screen sizes */
+  @media (max-width: 992px) {
+    /* Ensure the toggler icon fits properly and has sufficient contrast on dark background */
+    .navbar-toggler-icon {
+      background-color: #fff !important; /* Force white background */
+    }
+  }
+  

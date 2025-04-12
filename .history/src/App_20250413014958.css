@@ -1,0 +1,40 @@
+.main-content {
+    padding-top: 60px; /* Adjust based on actual navbar height */
+  }
+  
+  .Toastify__toast-container {
+    z-index: 9999 !important;
+    position: fixed !important;
+    top: 1rem;
+    left: 50%;
+    transform: translateX
+  (-50%);
+  }
+  .highlight {
+    color: #0fe1e1;
+    font-weight: 600;
+  }
+  .neon-text {
+    color: #0ff; /* Neon cyan */
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .neon-text:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 15px #0ff, 0 0 25px #0ff, 0 0 35px #0ff;
+  }
+  
+
+  @media (max-width: 768px) {
+    .main-content {
+      padding-top: 65px; /* Slightly higher for mobile navbar toggle */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,35 @@
+.main-content {
+    padding-top: 60px; /* Adjust based on actual navbar height */
+  }
+  
+  .Toastify__toast-container {
+    z-index: 9999 !important;
+    position: fixed !important;
+    top: 1rem;
+    left: 50%;
+    transform: translateX
+  (-50%);
+  }
+  .highlight {
+    color: #0fe1e1;
+    font-weight: 600;
+  }
+  .underlined-title {
+    text-decoratio;
+    font-weight: bold; /* Optional: to make it stand out more */
+    color: #00ffff; /* Optional: customize the color */
+  }
+  
+
+  @media (max-width: 768px) {
+    .main-content {
+      padding-top: 65px; /* Slightly higher for mobile navbar toggle */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
