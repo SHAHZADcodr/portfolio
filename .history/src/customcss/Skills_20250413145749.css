@@ -1,0 +1,20 @@
+/* ./styles/skills.css */
+.skill-circle .circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#00d1ff calc(var(--percentage) * 1%), #222222 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(0, 209, 255, 0.3);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .highlight {
+    color: #00d1ff;
+  }
+  

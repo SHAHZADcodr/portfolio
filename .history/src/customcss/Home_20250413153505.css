@@ -1,0 +1,180 @@
+/* Base Styles */
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  color: #fff;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(6, 8, 10, 0.5), rgba(18, 66, 69, 0.996)) 
+}
+
+.home-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #00ffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.highlightName {
+  color: #0fe1e1!important;
+  font-size: 2.5rem!important;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  color: #ddd;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.6;
+  text-align: justify;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.home-card {
+  flex: 1;
+  min-width: 280px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card-wrapper {
+  perspective: 1200px;
+}
+
+.image-card {
+  width: 280px;
+  height: 350px;
+  border: none;
+  background: none;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.8s;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.image-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-front {
+  background-color: #111;
+}
+
+.card-back {
+  background-color: #333;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Styling (Media Queries) */
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .name , .highlightName {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .home-info {
+    padding: 1rem;
+  }
+
+  .home-card {
+    margin-top: 2rem;
+  }
+
+  .image-card {
+    width: 240px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .name{
+    font-size: 1.5rem;
+  }
+  .highlightName
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .image-card {
+    width: 220px;
+    height: 280px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
