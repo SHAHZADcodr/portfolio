@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.27259e4c.css",
-    "main.js": "/portfolio/static/js/main.b79ea078.js",
+    "main.css": "/portfolio/static/css/main.a3bab157.css",
+    "main.js": "/portfolio/static/js/main.22095eed.js",
     "static/js/453.650738ac.chunk.js": "/portfolio/static/js/453.650738ac.chunk.js",
+    "static/media/quiz.png": "/portfolio/static/media/quiz.2098e8a202b0dc04d507.png",
     "static/media/typingpage.png": "/portfolio/static/media/typingpage.37d32f870c8c33b075c2.png",
+    "static/media/petCare.png": "/portfolio/static/media/petCare.533f8c52da879cc4627f.png",
+    "static/media/samplework.png": "/portfolio/static/media/samplework.284e9e3a3ca2504d25f3.png",
     "static/media/imageresizer.png": "/portfolio/static/media/imageresizer.d997336fe8f1e584f05b.png",
     "static/media/dockeraccount.png": "/portfolio/static/media/dockeraccount.42bb145bade66f89d005.png",
     "static/media/shady.jpg": "/portfolio/static/media/shady.5485977a2b66b759e1dc.jpg",
     "static/media/tictactoe.png": "/portfolio/static/media/tictactoe.4dccd4660ca7f5d48bdd.png",
+    "static/media/ticgame.png": "/portfolio/static/media/ticgame.1484d82992d274661921.png",
     "index.html": "/portfolio/index.html",
-    "main.27259e4c.css.map": "/portfolio/static/css/main.27259e4c.css.map",
-    "main.b79ea078.js.map": "/portfolio/static/js/main.b79ea078.js.map",
+    "main.a3bab157.css.map": "/portfolio/static/css/main.a3bab157.css.map",
+    "main.22095eed.js.map": "/portfolio/static/js/main.22095eed.js.map",
     "453.650738ac.chunk.js.map": "/portfolio/static/js/453.650738ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27259e4c.css",
-    "static/js/main.b79ea078.js"
+    "static/css/main.a3bab157.css",
+    "static/js/main.22095eed.js"
   ]
 }
